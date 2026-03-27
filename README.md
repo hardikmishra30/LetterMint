@@ -1,73 +1,169 @@
-# React + TypeScript + Vite
+# 🚀 BrandKit – Letterhead Generator SaaS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern SaaS web application to create professional letterheads with live preview and authentication.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* 🔐 User Authentication (Clerk)
+* 🎨 Real-time Letterhead Preview
+* 🏢 Company Branding Inputs (name, logo, address, contact)
+* 🌙 Dark Mode Support
+* ⚡ Fast and Responsive UI (React + Tailwind)
+* ☁️ Deployed on Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **Frontend:** React (Vite + TypeScript)
+* **Styling:** Tailwind CSS
+* **Authentication:** Clerk
+* **Routing:** React Router
+* **State Management:** React Hooks
+* **Deployment:** Vercel
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+brandkit/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── lib/
+│   ├── pages/
+│   ├── types/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── postcss.config.js
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone the repository
+
 ```
+git clone https://github.com/YOUR_USERNAME/brandkit.git
+cd brandkit
+```
+
+---
+
+### 2. Install dependencies
+
+```
+npm install
+```
+
+---
+
+### 3. Setup Environment Variables
+
+Create a `.env` file in root:
+
+```
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key_here
+```
+
+---
+
+### 4. Run the app
+
+```
+npm run dev
+```
+
+App will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🌐 Deployment
+
+Deployed using **Vercel**
+
+Steps:
+
+1. Push code to GitHub
+2. Import project in Vercel
+3. Add environment variable:
+
+   ```
+   VITE_CLERK_PUBLISHABLE_KEY
+   ```
+4. Deploy 🚀
+
+---
+
+## 🔐 Authentication
+
+This project uses **Clerk** for:
+
+* User Sign Up / Login
+* Session Management
+* Protected Routes
+
+---
+
+## 📸 Screenshots
+
+*Add screenshots of your app here*
+
+---
+
+## 📈 Future Improvements
+
+* 💾 Save user templates
+* 📄 Export as PDF
+* 🎨 Multiple design templates
+* 🌍 Custom domains
+* 🧠 AI-based branding suggestions
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙌 Acknowledgements
+
+* React
+* Tailwind CSS
+* Clerk
+* Vercel
+
+---
+
+## 💼 Author
+
+**Hardik Mishra**
+
+* GitHub: https://github.com/YOUR_USERNAME
+
+---
+
+⭐ If you like this project, give it a star!

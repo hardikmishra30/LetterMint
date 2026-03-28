@@ -1,4 +1,4 @@
-# 🚀 BrandKit – Letterhead Generator SaaS
+#  LetterMint – Letterhead Generator WebApp
 
 A modern SaaS web application to create professional letterheads with live preview and authentication.
 
@@ -121,22 +121,6 @@ This project uses **Clerk** for:
 
 ---
 
-## 📸 Screenshots
-
-*Add screenshots of your app here*
-
----
-
-## 📈 Future Improvements
-
-* 💾 Save user templates
-* 📄 Export as PDF
-* 🎨 Multiple design templates
-* 🌍 Custom domains
-* 🧠 AI-based branding suggestions
-
----
-
 ## 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first.
@@ -162,7 +146,7 @@ This project is licensed under the MIT License.
 
 **Hardik Mishra**
 
-* GitHub: https://github.com/YOUR_USERNAME
+* GitHub: https://github.com/hardikmishra30
 
 ---
 
